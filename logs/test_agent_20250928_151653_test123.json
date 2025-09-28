@@ -1,0 +1,10 @@
+{
+  "agent_name": "test_agent",
+  "system_prompt": "test prompt",
+  "model": "gemini-2.5-flash",
+  "question": "test question",
+  "response": "test response",
+  "tool_calls": [],
+  "source": "user",
+  "timestamp": "2025-09-28T15:16:53.854942"
+}

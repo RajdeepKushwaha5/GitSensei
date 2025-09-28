@@ -1,0 +1,15 @@
+{
+  "agent_name": "faq_agent_v3",
+  "system_prompt": "You are a helpful data engineering assistant",
+  "model": "gemini-2.5-flash",
+  "question": "How to deploy a model?",
+  "response": "This is a simulated response to: How to deploy a model?",
+  "tool_calls": [
+    {
+      "function": "hybrid_search",
+      "query": "How to deploy a model?"
+    }
+  ],
+  "source": "evaluation",
+  "timestamp": "2025-09-28T15:27:05.398309"
+}

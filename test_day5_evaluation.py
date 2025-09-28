@@ -13,6 +13,7 @@ from typing import List
 # Add the project directory to Python path
 sys.path.append(str(Path(__file__).parent))
 
+
 def test_logging_system():
     """Test the logging system functionality."""
     print("🧪 Testing Logging System...")
@@ -26,7 +27,7 @@ def test_logging_system():
         "response": "AI stands for Artificial Intelligence.",
         "tool_calls": [],
         "source": "user",
-        "timestamp": datetime.now()
+        "timestamp": datetime.now(),
     }
 
     # Test serialization
@@ -38,6 +39,7 @@ def test_logging_system():
     except Exception as e:
         print(f"❌ Logging system failed: {e}")
         return False
+
 
 def test_evaluation_classes():
     """Test the evaluation data structures."""
@@ -57,15 +59,10 @@ def test_evaluation_classes():
 
         # Test creating evaluation objects
         check = EvaluationCheck(
-            check_name="test_check",
-            justification="This is a test",
-            check_pass=True
+            check_name="test_check", justification="This is a test", check_pass=True
         )
 
-        EvaluationChecklist(
-            checklist=[check],
-            summary="Test evaluation"
-        )
+        EvaluationChecklist(checklist=[check], summary="Test evaluation")
 
         print("✅ Evaluation classes work correctly")
         return True
@@ -77,6 +74,7 @@ def test_evaluation_classes():
         print(f"❌ Evaluation classes failed: {e}")
         return False
 
+
 def test_metrics_calculation():
     """Test metrics calculation functions."""
     print("🧪 Testing Metrics Calculation...")
@@ -84,9 +82,21 @@ def test_metrics_calculation():
     try:
         # Mock evaluation data
         mock_data = [
-            {"instructions_follow": True, "answer_relevant": True, "tool_call_search": False},
-            {"instructions_follow": False, "answer_relevant": True, "tool_call_search": True},
-            {"instructions_follow": True, "answer_relevant": False, "tool_call_search": True}
+            {
+                "instructions_follow": True,
+                "answer_relevant": True,
+                "tool_call_search": False,
+            },
+            {
+                "instructions_follow": False,
+                "answer_relevant": True,
+                "tool_call_search": True,
+            },
+            {
+                "instructions_follow": True,
+                "answer_relevant": False,
+                "tool_call_search": True,
+            },
         ]
 
         # Calculate pass rates
@@ -103,16 +113,13 @@ def test_metrics_calculation():
         print(f"❌ Metrics calculation failed: {e}")
         return False
 
+
 def main():
     """Run all tests."""
     print("🚀 Day 5 Evaluation System Test Suite")
     print("=" * 50)
 
-    tests = [
-        test_logging_system,
-        test_evaluation_classes,
-        test_metrics_calculation
-    ]
+    tests = [test_logging_system, test_evaluation_classes, test_metrics_calculation]
 
     passed = 0
     total = len(tests)
@@ -131,6 +138,7 @@ def main():
     else:
         print("⚠️ Some tests failed. Check the implementation.")
         return 1
+
 
 if __name__ == "__main__":
     sys.exit(main())

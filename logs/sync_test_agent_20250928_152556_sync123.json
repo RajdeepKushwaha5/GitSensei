@@ -1,0 +1,15 @@
+{
+  "agent_name": "sync_test_agent",
+  "system_prompt": "You are a helpful data engineering assistant",
+  "model": "gemini-2.5-flash",
+  "question": "How do I install Kafka?",
+  "response": "Install Kafka by downloading from apache.org and following the installation guide.",
+  "tool_calls": [
+    {
+      "function": "hybrid_search",
+      "query": "kafka installation"
+    }
+  ],
+  "source": "test",
+  "timestamp": "2025-09-28T15:25:56.801415"
+}

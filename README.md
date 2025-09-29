@@ -6,7 +6,7 @@
 
 
 
-[![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)](https://www.python.org/)*Your AI GitHub Assistant - Ask questions about GitHub repositories and get intelligent answers powered by advanced AI**Your AI GitHub Assistant - Ask questions about GitHub repositories and get intelligent answers powered by advanced AI*
+[![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)](https://www.python.org/)*Your AI GitHub Assistant - Ask questions about GitHub repositories and get intelligent answers powered by advanced AI*
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
 

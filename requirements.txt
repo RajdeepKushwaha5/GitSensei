@@ -1,0 +1,28 @@
+# AI Agent Course - Requirements
+# Professional implementation with modular architecture
+
+# Core AI and ML
+google-generativeai>=0.8.5
+sentence-transformers>=2.7.0
+minsearch>=0.0.5
+
+# Data processing
+pandas>=2.2.0
+pydantic>=2.7.0
+python-frontmatter>=1.1.0
+
+# Web framework
+streamlit>=1.35.0
+
+# HTTP and utilities
+requests>=2.32.5
+tqdm>=4.67.1
+
+# Development and testing
+pytest>=8.0.0
+
+# Environment and configuration
+python-dotenv>=1.0.0
+
+# Jupyter for development
+jupyter>=1.1.1
